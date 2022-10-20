@@ -17,7 +17,7 @@ basic.forever(function () {
 basic.forever(function () {
     if (input.buttonIsPressed(Button.B)) {
         basic.clearScreen()
-        led.plot(0, y_value)
+        led.plot(x_value - 1, y_value)
         y_value += 1
         basic.pause(200)
         if (y_value > 4) {
