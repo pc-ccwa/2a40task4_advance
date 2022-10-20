@@ -1,4 +1,5 @@
 let x_value = 0
+let y_value = 0
 input.onButtonPressed(Button.A, function () {
 	
 })
@@ -10,6 +11,17 @@ basic.forever(function () {
         basic.pause(200)
         if (x_value > 4) {
             x_value = 0
+        }
+    }
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+        basic.clearScreen()
+        led.plot(0, y_value)
+        y_value += 1
+        basic.pause(200)
+        if (y_value > 4) {
+            y_value = 0
         }
     }
 })
