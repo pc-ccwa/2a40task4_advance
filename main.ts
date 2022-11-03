@@ -1,5 +1,5 @@
-let y_value = 0
 let x_value = 0
+let y_value = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.B)) {
         basic.clearScreen()
